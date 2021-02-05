@@ -1,0 +1,102 @@
+.section-blog-header {
+  background-repeat: repeat;
+  display: flex;
+  min-height: 300px;
+  .blog-header-content {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    height: 100%;
+    > header {
+      text-align: center;
+      padding-bottom: 100px;
+      padding-top: 100px;
+      .section-header {
+        font-weight: 600;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        color: #212121;
+        font-size: 32px;
+        letter-spacing: 20px;
+        text-transform: uppercase;
+      }
+      .section-breadcrumb {
+        > a {
+          font-weight: 300;
+          color: #525252;
+          font-size: 11px;
+          text-transform: uppercase;
+          &:not(:last-child) {
+            margin-right: 10px;
+            padding-right: 10px;
+            border-right: 1px solid;
+          }
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-blog-list {
+  padding-top: 50px;
+  &.for-homepage {
+    background-color: #f7f7f7;
+    .section-header {
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .blog-item__inner{
+      background: white;
+    }
+    #viewBlog {
+      background-color: white;
+      border: 2px solid black;
+      color: black;
+    }
+  }
+  .blog-list-container {
+    * {
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    .blog-list-item {
+      margin-bottom: 40px;
+      .blog-item__inner {
+        box-shadow: 0 0 25px 0 rgba(11, 25, 29, 0.1);
+        border: 1px solid #fff;
+        padding: 20px;
+        .blog-item__details {
+          .blog-item__title {
+            padding-top: 30px;
+            color: #373737;
+            line-height: 1.2em;
+            font-weight: 400;
+            letter-spacing: 0;
+            font-size: 20px;
+            margin: 0;
+          }
+          .blog-item__description {
+            font-size: 14px;
+            color: #595959;
+            margin: 15px 0;
+          }
+          .blog-item__date {
+            color: #a7a5a5 !important;
+            font-weight: 600 !important;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  #portfolioGrid {
+    overflow: visible !important;
+  }
+}

@@ -1,0 +1,33 @@
+.parallax-container {
+  overflow: hidden;
+  position: relative;
+  .parallax-block {
+    will-change: transform;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .parallax-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  .parallax-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

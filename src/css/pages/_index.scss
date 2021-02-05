@@ -1,0 +1,42 @@
+// SECTION homeslider
+@import "../components/_home_banner_slideshow.scss";
+
+// SECTION aboutus
+.section-about {
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    @include only-for-mobile {
+      text-align: left;
+    }
+    > article {
+      > figure {
+        > img {
+          margin-bottom: 40px;
+          width: 160px;
+        }
+      }
+      > header {
+        .section-header {
+          font-size: 50px;
+          letter-spacing: 10px;
+          text-transform: uppercase;
+          margin-bottom: 30px;
+          font-weight: 600;
+          @include only-for-mobile {
+            font-size: 35px;
+            margin-bottom: 14px;
+            margin-top: 3px;
+          }
+        }
+        .section-subheader {
+          font-weight: normal;
+          text-transform: uppercase;
+          color: $subheading-font-color;
+        }
+      }
+    }
+  }
+}

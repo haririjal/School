@@ -1,0 +1,32 @@
+.slider-container {
+  position: relative;
+  .prev,
+  .next {
+    position: absolute;
+    top: 45%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    color: white;
+    @include only-for-mobile {
+      height: 40px;
+      width: 40px;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .prevImg {
+    left: 0;
+  }
+
+  .nextImg {
+    right: 0;
+    transform: rotate(180deg);
+  }
+}

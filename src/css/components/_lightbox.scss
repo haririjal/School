@@ -1,0 +1,67 @@
+.basicLightbox {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  z-index: 99;
+  &.basicLightbox--visible {
+    opacity: 1;
+  }
+  &__placeholder {
+    display: flex;
+    height: 100%;
+    pointer-events: none;
+  }
+  .portfolio-details {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+    background: white;
+    pointer-events: all;
+    @include only-for-mobile {
+      background: rgb(255, 255, 255);
+    }
+    &.for-delivery {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+  .portfolio-gallery-slider {
+    margin-bottom: 20px;
+    .slider-item {
+      margin: 0 2rem;
+      > figure {
+        > img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .nextPort {
+    right: 0;
+    transform: rotate(180deg);
+  }
+  .prevPort {
+    left: 0;
+  }
+
+  .prevPort,
+  .nextPort {
+    @include only-for-mobile {
+      height: 25px;
+      width: 25px;
+    }
+  }
+}
+
+.portfolio-holder {
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
