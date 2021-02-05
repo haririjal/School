@@ -44,6 +44,7 @@
 // SECTION schedule
 .section-schedule {
   background-color: blue;
+  padding: 60px 0;
   &-content {
     height: 100%;
     display: flex;
@@ -57,7 +58,7 @@
       > header {
         .section-subheader {
           color:white;
-          font-size: 50px;
+          font-size: 25px;
           letter-spacing: 10px;
           text-transform: uppercase;
           margin-bottom: 30px;
