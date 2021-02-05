@@ -6,7 +6,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body class="preload">
-
+    <%= require('html-loader!./views/partial/pre-nav.html') %>
     <%= require('html-loader!./views/partial/nav.html') %>
     <main id="mainDiv">
       <!-- Section About us -->
