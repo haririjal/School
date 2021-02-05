@@ -40,3 +40,36 @@
     }
   }
 }
+
+// SECTION schedule
+.section-schedule {
+  background-color: blue;
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    @include only-for-mobile {
+      text-align: left;
+    }
+    > article {
+      
+      > header {
+        .section-subheader {
+          color:white;
+          font-size: 50px;
+          letter-spacing: 10px;
+          text-transform: uppercase;
+          margin-bottom: 30px;
+          font-weight: 600;
+          @include only-for-mobile {
+            font-size: 35px;
+            margin-bottom: 14px;
+            margin-top: 3px;
+          }
+        }
+       
+      }
+    }
+  }
+}
