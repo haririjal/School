@@ -1,18 +1,21 @@
 // Homepage footer
 footer {
+  background: rgb(19, 41, 128);
   text-align: center;
   padding: 80px 0;
   > p {
     margin: 0;
     font-size: 0.8em;
-    color: #777777;
+    color: $primary-color;
   }
   .footer-brand{
     img {
       max-width: 120px;
+      // float: left;
     }
   }
   .footer-social-links {
+    // float: left;
     margin: 2rem 0;
     > a {
       opacity: 0.8;
@@ -45,6 +48,21 @@ footer {
   }
 }
 
+// .footer-content{
+//   color: black;
+//   top: 20%;
+//   > a{
+//     color: $primary-color;
+//     text-decoration: none;
+//   }
+//   > footer-links{
+//     display: flex;
+//     flex-direction: column;
+//       > a{
+//         text-decoration: none;
+//       }
+//     }
+//   }
 // Blog footer
 
 footer.footer-blog {
